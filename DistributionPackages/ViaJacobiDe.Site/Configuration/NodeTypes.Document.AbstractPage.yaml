@@ -1,0 +1,22 @@
+'ViaJacobiDe.Site:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'ViaJacobiDe.Site:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'ViaJacobiDe.Site:Document.HomePage': false
+      'ViaJacobiDe.Site:Constraint.Document.Restricted': false
+  properties:
+    hideFromMainMenu:
+      type: boolean
+      ui:
+        label: i18n
+        reloadPageIfChanged: true
+        inspector:
+          group: visibility

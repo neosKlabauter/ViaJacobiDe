@@ -1,0 +1,9 @@
+prototype(ViaJacobiDe.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <ViaJacobiDe.Site:Component.Header />
+        {props.content}
+        <ViaJacobiDe.Site:Component.Footer />
+    `
+}
